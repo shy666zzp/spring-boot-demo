@@ -70,6 +70,7 @@
     <module>demo-https</module>
     <module>demo-flyway</module>
     <module>demo-pay</module>
+    <module>demo-redisson</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -87,6 +88,7 @@
     <hutool.version>5.4.5</hutool.version>
     <guava.version>29.0-jre</guava.version>
     <user.agent.version>1.20</user.agent.version>
+    <redisson.version>3.12.4</redisson.version>
   </properties>
 
   <repositories>
@@ -134,6 +136,12 @@
         <groupId>eu.bitwalker</groupId>
         <artifactId>UserAgentUtils</artifactId>
         <version>${user.agent.version}</version>
+      </dependency>
+      <!-- 综合型中间件-->
+      <dependency>
+        <groupId>org.redisson</groupId>
+        <artifactId>redisson-spring-boot-starter</artifactId>
+        <version>${redisson.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
